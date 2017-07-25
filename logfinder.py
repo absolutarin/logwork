@@ -13,14 +13,13 @@ import string
 import sys
 
 def findstring(filename, stringname):
-	with open(filename) as filetoberead:
+    with open(filename) as filetoberead:
 		for linenum, line in enumerate(filetoberead, 1):
 			if stringname in line:
 				print linenum 
 				print line
-			else:
-				print "String not Found!"
-
+		else:
+			print "String not Found!"
 
 if __name__ == "__main__":
 	# file_1 = raw_input("Enter the filename to look for logs: ")
